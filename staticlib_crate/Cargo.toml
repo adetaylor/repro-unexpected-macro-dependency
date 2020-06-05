@@ -1,0 +1,13 @@
+[package]
+name = "staticlib_crate"
+version = "0.1.0"
+authors = ["Adrian Taylor <adetaylor@chromium.org>"]
+edition = "2018"
+
+[lib]
+crate-type = ["staticlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rlib_crate = { path = "../rlib_crate" }
