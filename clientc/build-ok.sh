@@ -3,7 +3,7 @@
 set -e
 
 pushd ../rlib_crate
-cargo build --target arm-none-androideabi
+cargo build --target arm-linux-androideabi
 popd
 
 RUSTC_LIBDIR="$(rustc --print target-libdir --target arm-linux-androideabi)"
